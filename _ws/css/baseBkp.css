@@ -1,0 +1,586 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+font-family: open;
+src: url("../files/OpenSans-CondLight.ttf") format("truetype");
+}
+@font-face {
+font-family: bebas;
+src: url("../files/BebasNeue.otf") format("opentype");
+}
+
+* {
+margin:0;
+padding:0;
+list-style:none;
+vertical-align:baseline;
+text-decoration:none;
+font-family:Arial, Helvetica, sans-serif; font-size:12px;
+}
+a:hover{text-decoration:underline;}
+
+
+body{background:#f9fafa; margin:0 auto;}
+
+div.header {
+    background: none repeat scroll 0 0 #EF4C04;
+    height: 170px;
+}
+div.header div.content {
+    margin: 0 auto;
+    padding-top: 15px;
+    position: relative;
+    width: 940px;
+}
+div.header div.content ul.topFunctions {
+    border-bottom: 1px solid #CA460C;
+    color: #FFFFFF;
+    display: block;
+    padding-bottom: 25px;
+    width: 940px;
+}
+div.header div.content ul.topFunctions li{display:block; float:left; margin-right:10px;}
+div.header div.content ul.topFunctions li a{color:#FFF;}
+div.header div.content a.setGame {
+    background: url("../images/setIco.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 23px;
+    position: absolute;
+    right: 0;
+    text-indent: -6000px;
+    top: 10px;
+    width: 136px;
+}
+div.header div.content a.setGame:hover{background-position: 0 -21px;}
+
+div.header div.content h1 a {
+    background: url("../images/setIco.png") no-repeat scroll 0 -54px transparent;
+    cursor: pointer;
+    display: block;
+    height: 48px;
+    left: -20px;
+    position: absolute;
+    text-indent: -6000px;
+    top: 60px;
+    width: 211px;
+}
+div.header div.content span.submenu {
+    left: 0;
+    position: absolute;
+    top: 105px;
+}
+div.header div.content span.submenu a {
+    color: #000000;
+    font-family: open,arial,Helvetica,sans-serif;
+    font-size: 16px;
+    margin: 0 7px;
+}
+div.header div.content form {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+div.header div.content form div {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: medium none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 1px #9C3202;
+    float: left;
+    margin-right: 7px;
+    overflow: hidden;
+    padding: 10px;
+    width: 145px;
+}
+div.header div.content form select {
+    background: url("../images/setIco.png") no-repeat scroll 127px -115px transparent;
+    border: medium none;
+    color: #464646;
+    font-size: 15px;
+    font-weight: bold;
+    width: 200px;
+}
+div.header div.content form select option{font-size: 15px;font-weight: bold;border:none;}
+div.header div.content form input[type="submit"] {
+    background: none repeat scroll 0 0 #454545;
+    border: medium none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 1px #9C3202;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: bebas,Arial,Helvetica,sans-serif;
+    font-size: 19px;
+    padding: 7px 21px;
+}
+div.header div.content form input[type="submit"]:hover{background:#222222;}
+div.frameContent {
+    background: url("../images/bgHive.png") repeat scroll center top transparent;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    position: relative;
+    width: 940px;
+}
+div.frameContent span.arrowOnTheknee {
+    background: url("../images/setIco.png") repeat scroll -57px -113px transparent;
+    display: block;
+    height: 78px;
+    left: 235px;
+    position: absolute;
+    top: 0;
+    width: 153px;
+}
+div.frameContent h2 {
+    color: #EF4C04;
+    font-family: open;
+    font-size: 33px;
+    font-weight: normal;
+    left: 100px;
+    position: absolute;
+    text-align: center;
+    top: 70px;
+    width: 500px;
+}
+div.frameContent form.subscription {
+    margin-left: 80px;
+    padding-top: 150px;
+    width: 850px;
+}
+div.frameContent form.subscription label {
+    display: block;
+    float: left;
+    font-family: open,Arial,Helvetica,sans-serif;
+    font-size: 26px;
+    text-align: right;
+    width: 200px;
+	line-height:48px;
+}
+div.frameContent form.subscription input[type="text"], div.frameContent form.subscription input[type="password"], div.frameContent form.subscription div.selectBoxstyle {
+    background: none repeat scroll 0 0 #2C2C2C;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    font-family: open,Arial,Helvetica,sans-serif;
+    font-size: 26px;
+    margin-bottom: 11px;
+    margin-left: 12px;
+    padding: 6px;
+	float: left;
+}
+
+div.frameContent form.subscription div.selectBoxstyle {
+    float: left;
+    height: 38px;
+	overflow:hidden;
+    width: 250px;
+}
+div.frameContent form.subscription select {
+    background: url("../images/setIco.png") repeat scroll 221px -136px transparent;
+    border: medium none;
+    color: #FFFFFF;
+    display: block;
+    font-family: open, Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    height: 32px;
+    width: 300px;
+}
+div.frameContent form.subscription select option{
+	font-family: open, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+	padding:0 8px;}
+div.frameContent form.subscription input[type="submit"] {
+    background: none repeat scroll 0 0 #EF4C04;
+    border: medium none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 1px #9C3202;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: bebas,Arial,Helvetica,sans-serif;
+    font-size: 19px;
+    margin: 0 0 0 212px;
+    padding: 7px 21px;
+}
+div.frameContent form.subscription span.subtBig{font-family:bebas, Arial, Helvetica, sans-serif;color:#2c2c2c; font-size:22px; padding:10px;}
+div.frameContent form.subscription span.subtBig a{font-family:bebas, Arial, Helvetica, sans-serif;font-size:22px;color:#ef4c04; text-decoration:underline;}
+div.frameContent form.subscription span.subtSmall {
+    display: block;
+    float: left;
+    font-family: open,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin: -6px 0 0 334px;
+    width: 320px;
+}
+div.frameContent form.subscription div.subscriptionFull {
+    clear: left;
+    padding-top: 40px;
+	opacity:0.2;
+}
+div.frameContent form.subscription ul {
+    display: block;
+    float: left;
+    margin-bottom: 25px;
+    width: 180px;
+}
+div.frameContent form.subscription  ul li {
+    display: block;
+    font-family: open,Arial,Helvetica,sans-serif;
+    font-size: 26px;
+    margin-left: 26px;
+    padding: 0;
+}
+div.frameContent form.subscription ul li input[type=checkbox], div.frameContent form.subscription ul li input[type=radio]{margin-right:10px;}
+span.legendas {
+    display: block;
+    float: left;
+    font-family: open,Arial,Helvetica,sans-serif;
+    font-size: 26px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+a.btFotoPerfil{
+	 background: none repeat scroll 0 0 #EF4C04;
+    border: medium none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 1px #9C3202;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: bebas,Arial,Helvetica,sans-serif;
+    font-size: 19px;
+    margin: 6px 10px;
+    padding: 7px 21px;}
+
+div.footer {
+    margin: 0 auto;
+    padding: 65px 0;
+    position: relative;
+    width: 940px;
+}
+div.footer a.logoFooter {
+    background: url("../images/setIco.png") repeat scroll -8px -204px transparent;
+    display: block;
+    float: left;
+    height: 30px;
+    text-indent: -6000px;
+    width: 133px;
+}
+div.footer p.menuFooter{display:block; float:left; font-family:open, Arial, Helvetica, sans-serif;color:#2c2c2c;font-size:18px;}
+div.footer p.menuFooter a{font-family:open, Arial, Helvetica, sans-serif;color:#2c2c2c;font-size:18px;padding:0 8px;}
+div.footer span.partners {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 330px;
+}
+div.footer span.partners p{font-family:open, Arial, Helvetica, sans-serif; font-size:18px;float:left;margin-right:10px;}
+div.footer span.partners a img {
+    border: 1px solid #D4D4D4;
+    border-radius: 6px 6px 6px 6px;
+    float: left;
+    margin-right: 6px;
+    margin-top: -15px;
+}
+div.footer span.partners a img :last-child{margin-right:0;}
+div.footer ul.twitter {
+    border-bottom: 1px solid #BBBCBC;
+    border-top: 1px solid #BBBCBC;
+    clear: left;
+    margin: 55px 0 15px;
+    padding: 15px 0;
+}
+div.footer ul.twitter li {
+    display: block;
+    float: left;
+    padding-right: 25px;
+    width: 195px;
+	line-height:21px;
+}
+div.footer ul.twitter li a, div.footer span.copyright a{color:#388cc0;}
+div.footer ul.twitter li.last{padding-right:0;}
+div.footer ul.twitter li.iconTwitter{width:60px;}
+div.footer ul.twitter li.iconTwitter a {
+    background: url("../images/setIco.png") no-repeat scroll -160px -2px transparent;
+    display: block;
+    height: 45px;
+    text-indent: -6000px;
+    width: 52px;
+}
+div.footer span.copyright {
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
+    text-align: center;
+    width: 940px;
+}
+
+p.headingForm {
+    display: block;
+    left: 219px;
+    position: absolute;
+    top: 150px;
+    width: 700px;
+}
+p.headingForm strong{font-family:bebas, Arial, Helvetica, sans-serif; font-size:22px;font-weight:normal;}
+ul.rememberPass{display:block; clear:left;padding-left: 292px;padding-top:35px;}
+ul.rememberPass a {
+    color: #EF4C04;
+    font-family: open,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    
+    text-decoration: underline;
+}
+form.subscription  small.legendaForms {
+    color: #969595;
+    float: left;
+    font-family: open,Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 12px;
+}
+form.subscription  p, form.subscription  p a{font-family:open, Arial, Helvetica, sans-serif; font-size:18px;}
+form.subscription  p a{color:#EF4C04;}
+form.subscription p.sobreTurma {
+    display: block;
+    float: left;
+    padding-bottom: 25px;
+    padding-left: 14px;
+    padding-top: 12px;
+    width: 630px;
+}
+form.subscription p.textMidForms {
+    display: block;
+    float: left;
+    font-size: 26px;
+    line-height: 48px;
+    margin-left: 10px;
+}
+
+
+
+div.headerSports {
+    background: none repeat scroll 0 0 #F9FAFA;
+    border-bottom: 1px solid #BBBCBC;
+    display: block;
+    height: 80px;
+    padding-top: 70px;
+}
+div.headerSports h2 {
+    color: #2C2C2C;
+    float: left;
+    font-size: 45px;
+    left: 0;
+    position: relative;
+    text-align: left;
+    top: inherit;
+    width: inherit;
+}
+div.headerSports p.numbAthlets {
+    color: #2C2C2C;
+    display: block;
+    float: left;
+    font-size: 18px;
+    margin-left: 18px;
+    margin-top: 29px;
+}
+div.headerSports span {
+    display: block;
+    float: right;
+    font-family: open,Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    margin-top: 23px;
+    padding-left: 20px;
+    width: 205px;
+}
+a.redDot, a.whiteDot {
+    display: block;
+    font-family: bebas,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    height: 26px;
+    padding-top: 5px;
+    text-align: center;
+    width: 30px;
+	float: left;
+}
+a.redDot:hover,a.whiteDot:hover{text-decoration:none;}
+a.redDot {
+    background: url("../images/setIco.png") repeat scroll -14px -251px transparent;
+    color: #FFFFFF;
+}
+a.whiteDot {
+    background: url("../images/setIco.png") repeat scroll -50px -251px transparent;
+    color: #626262;    
+}
+div.calendarTopSports {
+    background: none repeat scroll 0 0 #F9FAFA;
+    border-bottom: 1px solid #BBBCBC;
+    height: 22px;
+    padding: 14px 0;
+}
+
+div.calendarTopSports p {
+    display: block;
+    float: left;
+    font-size: 16px;
+    width: 230px;
+}
+div.calendarTopSports dl dt, div.calendarTopSports dl dd {
+    color: #2C2C2C;
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+}
+div.calendarTopSports dl dd {
+    height: 20px;
+    line-height: 20px;
+    margin: 0 6px;
+    text-align: center;
+    width: 23px;
+}
+div.calendarTopSports dl dd a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px #999999;
+    color: #2C2C2C;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+}
+div.calendarTopSports dl dd a:hover{
+	background:	#EF4C04;
+	color:#FFF;
+	text-decoration:none;
+	border-color:#EF4C04;
+}
+div.calendarTopSports dl dt{color:#ef4c04;font-weight:bold;}
+div.column640px{width:640px;float:left;}
+div.column640px div.columnTeamsPreview {
+    float: left;
+    margin-right: 40px;
+    width: 173px;
+}
+div.column640px div.columnTeamsPreview h3 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 1px 1px #999999;
+    margin: 15px 0;
+    padding: 15px;
+    text-align: center;
+	font-weight:none;
+	color:#2C2C2C;
+}
+div.column640px div.columnTeamsPreview span.time {
+    background: none repeat scroll 0 0 #2C2C2C;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 2px 1px #D4D4D4;
+    color: #F9FAFA;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 14px 0;
+    padding: 6px;
+    text-align: center;
+}
+div.column640px div.columnTeamsPreview span.time strong{font-size:16px;padding-right:6px;}
+div.column640px div.columnTeamsPreview h3 strong{padding-right:8px; font-size:16px;font-weight:bold; }
+div.basket{background:url(../images/fieldBasket.jpg);}
+div.column640px div.columnTeamsPreview div.teamPreview {
+    border-radius: 8px 8px 8px 8px;
+    margin-bottom: 15px;
+    padding: 14px 24px 74px;
+    position: relative;
+}
+div.column640px div.columnTeamsPreview div.teamPreview h4 {
+    font-family: bebas,Arial,Helvetica,sans-serif;
+    font-size: 23px;
+    font-weight: normal;
+    padding: 0 0 5px;
+    text-align: center;
+}
+span.wannaPlayButton a.moderado, span.wannaPlayButton a.livre, span.wannaPlayButton a.escalados{
+    bottom: 0;
+    display: block;
+    height: 76px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -72px;
+    width: 173px;
+}
+span.wannaPlayButton a.moderado{background: url("../images/setIco.png") repeat scroll -1px -292px transparent;}
+span.wannaPlayButton a.moderado:hover{background-position:-1px -373px;}
+span.wannaPlayButton a.livre{background: url("../images/setIco.png") repeat scroll -182px -292px transparent;}
+span.wannaPlayButton a.livre:hover{background-position:-182px -373px;}
+span.wannaPlayButton a.escalados{background: url("../images/setIco.png") repeat scroll -363px -292px  transparent;}
+
+div.chatTeamsPreview {
+    background: none repeat scroll 0 0 #EF4C04;
+    border-radius: 8px 8px 8px 8px;
+    float: left;
+    margin-top: 15px;
+    padding-top: 15px;
+    width: 300px;
+}
+div.chatTeamsPreview h4{font-size:22px; color:#FFF;}
+div.chatTeamsPreview ul{display:block;padding-top:25px;}
+div.chatTeamsPreview ul li img{width:60px;}
+
+
+/* NAKID */
+
+label.formLabel {
+color: #009999;
+    display: block;
+    float: left;
+    padding-right: 10px;
+    text-align: right;
+    width: 150px;
+}
+
+.formSubmit {
+	
+    display: block;
+    float: left;
+    margin-left: 160px;
+    
+}
+
+div.tombo {	
+	background-color: #EEEEEE;
+    border-color: #000000;
+    border-width: 1px;
+    margin-left: 160px;
+    position: absolute;
+    width: 280px;
+    z-index: 9999; 
+}
+
+a.itemTombo {
+	background-color: #FFFFCE;
+    display: block;
+    padding: 5px;
+    width: 270px;
+}
+
+a.itemTomboSelected {
+	background-color: #F5ECA9;    
+}
+
+input#cidade{
+	background-color:#8DD;
+}
+
+
+
+
+
+
+
+

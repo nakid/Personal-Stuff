@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#RewriteBase /showsem2/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^generos/?$ conf_generos.php [NC,L]
+RewriteRule ^proximos-shows/([0-9a-z-]+)/?$ index.php?dias=$1 [NC,L]
+RewriteRule ^([0-9a-z-]+)/([0-9a-z-]+)/?$ show.php?frart=$1&dia=$2 [NC,L]
+
+#RewriteRule ^artistas/?$ artistas_az.php [NC,L]
+#RewriteRule ^shows-no-brasil/?$ internacionais.php [NC,L]
+#RewriteRule ^sugerir-artista/?$ sugerir_artista.php [NC,L]
+#RewriteRule ^artista/([0-9a-z-]+)/?$ artista.php?frart=$1 [NC,L]
+#RewriteRule ^([0-9a-z-]+)/?$ cidade.php?frcid=$1 [NC,L]
+#RewriteRule ^([0-9a-z-]+)/([0-9a-z-]+)/?$ evento.php?freve1=$1&freve2=$2 [NC,L]
+#RewriteRule ^([0-9a-z-]+)/([0-9a-z-]+)/([0-9a-z-]+)/?$ show.php?frcid=$1&frart=$2&dia=$3 [NC,L]
+
+
+#RewriteRule ^(.+)$ cidade.php?frcid=$1 [NC,L]
+#RewriteRule ^index\.php$ http://www.vemprojogo.com.br/desenv/ [R=301,L]
+#RewriteRule ^.+$ 404.php [NC,L]
+#RewriteRule ^.*cadastro.*$ /vemprojogo/redirect.php
+#RewriteRule ^contato/?$ /contato.php [NC,L]
+
+
+</IfModule>

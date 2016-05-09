@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+        rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-554109df5eb53a61"
+        async="async"></script>
+        <!-- BARRINHA SUPERIOR -->
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		
+		
+		
+		
+		
+		<!-- MENU FIXED-->
+        <div id="glue-menu" class="section section-danger" style="position:fixed; width:100%; top:0; z-index: 9999; display:none">
+            <div class="container">
+                <div class="row">
+                    <!-- LARGE -->
+                    <div class="col-lg-12 hidden-md hidden-sm hidden-xs">
+                        
+						<!--span id="debug">debug</span-->
+						<i class="fa fa-3x fa-calendar-o fa-fw text-inverse" style="float:left;"></i>
+                        <h2 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Hoje, 05/05/15</h2>
+                        <!--i class="fa fa-3x fa-angle-double-right fa-fw text-inverse"></i>
+                        <i class="fa fa-3x fa-fw text-inverse fa-angle-right"></i>
+                        <i class="fa fa-3x fa-fw text-inverse fa-caret-right"></i>
+                        <i class="fa fa-3x fa-fw text-inverse et-right fa-chevron-right"></i-->
+						
+						<!--i class="fa fa-3x fa-angle-double-left fa-fw text-inverse"></i>
+                        <i class="fa fa-3x fa-fw text-inverse fa-angle-left"></i>
+                        <i class="fa fa-3x fa-fw text-inverse fa-caret-left"></i>
+                        <i class="fa fa-3x fa-fw text-inverse et-right fa-chevron-left"></i-->
+						
+						
+                        <div class="btn-group btn-group-lg" style="float:left">
+                            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" style="border-color: #fff;"> Escolha o dia <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Hoje</a>
+                                </li>
+                                <li>
+                                    <a href="#">Amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Depois de amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Outro dia</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="fa fa-3x fa-fw text-inverse -o fa-music" style="float:left; margin: 0 0 0 40px;"></i>
+                        <h2 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Todos os gêneros Musicais</h2>
+                        <a class="btn btn-danger btn-lg" style="float:left; border-color: #fff;">Escolha os gêneros</a>
+                        
+                    </div>
+					
+					<!-- MÉDIO -->
+                    <div class="col-md-12 hidden-lg hidden-sm hidden-xs">
+                        <i class="fa fa-2x fa-fw text-inverse fa-calendar-o" style="float:left; margin: 0 0 0 8px;"></i>
+                        <h3 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Amanhã, 05/05/15</h3>
+                        <div class="btn-group btn-group-md" style="float:left">
+                            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" style="border-color: #fff;"> Escolha o dia <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Hoje</a>
+                                </li>
+                                <li>
+                                    <a href="#">Amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Depois de amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Outro dia</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="fa fa-2x fa-fw text-inverse -o fa-music" style="float:left; margin: 0 0 0 40px;"></i>
+                        <h3 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Todos os gêneros Musicais</h3>
+                        <a class="btn btn-danger btn-md" style="float:left; border-color: #fff;">Escolha os gêneros</a>
+                        
+                    </div>
+					
+					
+					<!-- PEQUENO -->
+                    
+					<div class="col-sm-8 hidden-lg hidden-md hidden-xs">
+						
+						<i class="fa fa-3x fa-fw text-inverse fa-calendar-o" style="float:left; margin: 0 0 0 0;"></i>
+                        <h2 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Sexta, 05/05/15</h2>
+						
+						<div style="clear:left; height:15px; width:100%" ></div>
+                        <i class="fa fa-3x fa-fw text-inverse -o fa-music" style="float:left; margin: 0 0 0 0;"></i>
+                        <h2 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Todos os gêneros Musicais</h2>
+					</div>
+					
+					<div class="col-sm-4 hidden-lg hidden-md hidden-xs">
+                        
+						<div class="btn-group btn-group-lg" style="float:left; margin-bottom:15px">
+                            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" style="border-color: #fff; width:200px;"> Escolha o dia <span class="caret"></span></a>
+							
+                            <ul class="dropdown-menu" role="menu" style="width:200px;">
+                                <li>
+                                    <a href="#">Hoje</a>
+                                </li>
+                                <li>
+                                    <a href="#">Amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Depois de amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Outro dia</a>
+                                </li>
+                            </ul>
+                        </div>
+						<a class="btn btn-danger btn-lg" style="float:left; border-color: #fff; width:200px;">Escolha os gêneros</a>
+						
+                    </div>
+					
+					
+					<!-- MUITO PEQUENO -->
+                    
+					<div class="col-xs-8 hidden-lg hidden-md hidden-sm">
+						
+						<i class="fa fa-2x fa-fw text-inverse fa-calendar-o" style="float:left; margin: 0 0 0 0;"></i>
+                        <h3 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Segunda, 05/05/15</h3>
+						
+						<div style="clear:left; height:15px; width:100%" ></div>
+                        <i class="fa fa-2x fa-fw text-inverse -o fa-music" style="float:left; margin: 0 0 0 0;"></i>
+                        <h3 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Todos os gêneros Musicais</h3>
+					</div>
+					
+					<div class="col-xs-4 hidden-lg hidden-md hidden-sm">
+                        
+						<div class="btn-group btn-group-md" style="float:left; margin-bottom:15px">
+                            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" style="border-color: #fff; width:150px;"> Escolha o dia <span class="caret"></span></a>
+							
+                            <ul class="dropdown-menu" role="menu" style="width:150px;">
+                                <li>
+                                    <a href="#">Hoje</a>
+                                </li>
+                                <li>
+                                    <a href="#">Amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Depois de amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Outro dia</a>
+                                </li>
+                            </ul>
+                        </div>
+						<a class="btn btn-danger btn-md" style="float:left; border-color: #fff; width:150px;">Escolha os gêneros</a>
+						
+                    </div>
+					
+					
+					
+					
+                </div>
+            </div>
+        </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        <!-- HEADER -->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <a href="#"><img src="img/logo.png" class="img-responsive center-block" style="margin-top:10px;"></a>
+                    </div>
+                    <div class="col-sm-12 hidden-lg">
+                        <h1 class="text-center">Procurando por
+                            <strong>shows em São Paulo</strong>?
+                            <br class="hidden-lg hidden-sm hidden-xs">Então você vai
+                            <strong>adorar a gente!</strong>
+                        </h1>
+                    </div>
+                    <div class="col-lg-8 col-sm-12">
+                        <br class="hidden-lg">
+                        <a href="#"><img src="img/an_728-90.png" class="center-block"></a>
+                    </div>
+                    <div class="col-sm-12 hidden-md hidden-sm hidden-xs">
+                        <h1 class="text-center">Procurando por
+                            <strong>shows em São Paulo</strong>? Então você vai
+                            <strong>adorar a gente!</strong>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- DESTAQUES -->
+        <div class="section section-danger" style="background-color:#333!important">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-xs-12">
+                        <a href="#"><img src="img/825-400_1.jpg" class="img-responsive"></a>
+                    </div>
+                    <div class="col-sm-3 hidden-xs hidden-sm">
+                        <a href="#"><img src="img/344-250_1.jpg" class="img-responsive" style="margin-bottom:30px;"></a>
+                        <a href="#"><img src="img/344-250_2.jpg" class="img-responsive"></a>
+                        <!--a href="#"><img src="img/300-185_1.jpg" class="img-responsive"></a>
+                        <a href="#"><img src="img/300-185_2.jpg" class="img-responsive"></a-->
+                    </div>
+                    <div class="hidden-md hidden-lg" style="width:100%; float:left; height:30px;">&nbsp;</div>
+                    <div class="col-xs-6 hidden-md hidden-lg">
+                        <a href="#"><img src="img/344-250_1.jpg" class="img-responsive"></a>
+                        <!--a href="#"><img src="img/300-185_1.jpg" class="img-responsive"></a>
+                        <a href="#"><img src="img/300-185_2.jpg" class="img-responsive"></a-->
+                    </div>
+                    <div class="col-xs-6 hidden-md hidden-lg">
+                        <a href="#"><img src="img/344-250_2.jpg" class="img-responsive"></a>
+                        <!--a href="#"><img src="img/300-185_1.jpg" class="img-responsive"></a>
+                        <a href="#"><img src="img/300-185_2.jpg" class="img-responsive"></a-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MENU -->
+		<a id="shows" name="shows"></a>
+        <div class="section section-danger">
+            <div class="container">
+                <div class="row">
+                    <!-- LARGE -->
+                    <div class="col-lg-12 hidden-md hidden-sm hidden-xs">
+                        <i class="fa fa-3x fa-calendar-o fa-fw text-inverse" style="float:left;"></i>
+                        <h2 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Hoje, 05/05/15</h2>
+                        <!--i class="fa fa-3x fa-angle-double-right fa-fw text-inverse"></i>
+                        <i class="fa fa-3x fa-fw text-inverse fa-angle-right"></i>
+                        <i class="fa fa-3x fa-fw text-inverse fa-caret-right"></i>
+                        <i class="fa fa-3x fa-fw text-inverse et-right fa-chevron-right"></i-->
+                        <div class="btn-group btn-group-lg" style="float:left">
+                            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" style="border-color: #fff;"> Escolha o dia <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Hoje</a>
+                                </li>
+                                <li>
+                                    <a href="#">Amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Depois de amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Outro dia</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="fa fa-3x fa-fw text-inverse -o fa-music" style="float:left; margin: 0 0 0 40px;"></i>
+                        <h2 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Todos os gêneros Musicais</h2>
+                        <a class="btn btn-danger btn-lg" style="float:left; border-color: #fff;">Escolha os gêneros</a>
+                        
+                    </div>
+					
+					<!-- MÉDIO -->
+                    <div class="col-md-12 hidden-lg hidden-sm hidden-xs">
+                        <i class="fa fa-2x fa-fw text-inverse fa-calendar-o" style="float:left; margin: 0 0 0 8px;"></i>
+                        <h3 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Amanhã, 05/05/15</h3>
+                        <div class="btn-group btn-group-md" style="float:left">
+                            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" style="border-color: #fff;"> Escolha o dia <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Hoje</a>
+                                </li>
+                                <li>
+                                    <a href="#">Amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Depois de amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Outro dia</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="fa fa-2x fa-fw text-inverse -o fa-music" style="float:left; margin: 0 0 0 40px;"></i>
+                        <h3 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Todos os gêneros Musicais</h3>
+                        <a class="btn btn-danger btn-md" style="float:left; border-color: #fff;">Escolha os gêneros</a>
+                        
+                    </div>
+					
+					
+					<!-- PEQUENO -->
+                    
+					<div class="col-sm-8 hidden-lg hidden-md hidden-xs">
+						
+						<i class="fa fa-3x fa-fw text-inverse fa-calendar-o" style="float:left; margin: 0 0 0 0;"></i>
+                        <h2 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Sexta, 05/05/15</h2>
+						
+						<div style="clear:left; height:15px; width:100%" ></div>
+                        <i class="fa fa-3x fa-fw text-inverse -o fa-music" style="float:left; margin: 0 0 0 0;"></i>
+                        <h2 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Todos os gêneros Musicais</h2>
+					</div>
+					
+					<div class="col-sm-4 hidden-lg hidden-md hidden-xs">
+                        
+						<div class="btn-group btn-group-lg" style="float:left; margin-bottom:15px">
+                            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" style="border-color: #fff; width:200px;"> Escolha o dia <span class="caret"></span></a>
+							
+                            <ul class="dropdown-menu" role="menu" style="width:200px;">
+                                <li>
+                                    <a href="#">Hoje</a>
+                                </li>
+                                <li>
+                                    <a href="#">Amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Depois de amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Outro dia</a>
+                                </li>
+                            </ul>
+                        </div>
+						<a class="btn btn-danger btn-lg" style="float:left; border-color: #fff; width:200px;">Escolha os gêneros</a>
+						
+                    </div>
+					
+					
+					<!-- MUITO PEQUENO -->
+                    
+					<div class="col-xs-8 hidden-lg hidden-md hidden-sm">
+						
+						<i class="fa fa-2x fa-fw text-inverse fa-calendar-o" style="float:left; margin: 0 0 0 0;"></i>
+                        <h3 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Segunda, 05/05/15</h3>
+						
+						<div style="clear:left; height:15px; width:100%" ></div>
+                        <i class="fa fa-2x fa-fw text-inverse -o fa-music" style="float:left; margin: 0 0 0 0;"></i>
+                        <h3 style="float:left;  margin: 5px 15px 0 5px; color:#fff ">Todos os gêneros Musicais</h3>
+					</div>
+					
+					<div class="col-xs-4 hidden-lg hidden-md hidden-sm">
+                        
+						<div class="btn-group btn-group-md" style="float:left; margin-bottom:15px">
+                            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" style="border-color: #fff; width:150px;"> Escolha o dia <span class="caret"></span></a>
+							
+                            <ul class="dropdown-menu" role="menu" style="width:150px;">
+                                <li>
+                                    <a href="#">Hoje</a>
+                                </li>
+                                <li>
+                                    <a href="#">Amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Depois de amanhã</a>
+                                </li>
+                                <li>
+                                    <a href="#">Outro dia</a>
+                                </li>
+                            </ul>
+                        </div>
+						<a class="btn btn-danger btn-md" style="float:left; border-color: #fff; width:150px;">Escolha os gêneros</a>
+						
+                    </div>
+					
+					
+					
+					
+                </div>
+            </div>
+        </div>
+		
+		
+		
+		
+		
+        <!-- SETA VERMELHA -->
+        <div class="section">
+            <div class="container">
+                <img src="img/arrow-green-down.png" style="margin-left: 42px;">
+            </div>
+        </div>
+        <!-- SHOWS -->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-8">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_1.jpg" class="img-responsive">
+                                <h2>Título</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_2.jpg" class="img-responsive">
+                                <h2>A title Arara grande mesmo</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <!-- br -->
+                            <div class="clearfix hidden-lg hidden-md"></div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_3.jpg" class="img-responsive">
+                                <h2>A title Muito grande que quebra tudo</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <!-- br -->
+                            <div class="clearfix hidden-sm hidden-xs"></div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_4.jpg" class="img-responsive">
+                                <h2>A title</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <!-- br -->
+                            <div class="clearfix hidden-lg hidden-md"></div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_5.jpg" class="img-responsive">
+                                <h2>A title Pavao bem grande que quebra</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_6.jpg" class="img-responsive">
+                                <h2>A title</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <!-- br -->
+                            <div class="clearfix"></div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_7.jpg" class="img-responsive">
+                                <h2>A title</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_8.jpg" class="img-responsive">
+                                <h2>A title</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <!-- br -->
+                            <div class="clearfix hidden-lg hidden-md"></div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_1.jpg" class="img-responsive">
+                                <h2>Tútulo</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <!-- br -->
+                            <div class="clearfix hidden-sm hidden-xs"></div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_2.jpg" class="img-responsive">
+                                <h2>A title Arara grande mesmo</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <!-- br -->
+                            <div class="clearfix hidden-lg hidden-md"></div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_3.jpg" class="img-responsive">
+                                <h2>A title Muito grande que quebra tudo</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_4.jpg" class="img-responsive">
+                                <h2>A title</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                            <!-- br -->
+                            <div class="clearfix"></div>
+                            <div class="col-md-4 col-xs-6">
+                                <img src="img/220_5.jpg" class="img-responsive">
+                                <h2>A title Pavao bem grande que quebra</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                                    <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                    <br>Ut enim ad minim veniam, quis nostrud</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div style="width:100%; background-color:#ddd; padding:15px;">
+                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                            <!--div class="addthis_sharing_toolbox"></div-->
+                            <img src="img/addthis.png" class="">
+                            <hr>
+                            <h3>Junte-se a nós!</h3>Casas se shows, artistas e produtoras,
+                            <a href="#">entre em contato</a>e envie suas agendas.
+                            <hr>
+                            <h3>Anuncie!</h3>Promova seu show, sua casa ou seu negócio entre nossos destaques.
+                            <a
+                            href="#">Clique aqui</a>.
+                                <hr>
+                                <img src="img/an_180-150.png">
+                                <hr>
+                                <img src="img/an_180-150.png">
+                                <hr>
+                                <img src="img/an_180-150.png">
+                                <!--img src="img/an_texto.png"-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_1.jpg" class="img-responsive">
+                        <h2>Tútulo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_2.jpg" class="img-responsive">
+                        <h2>A title Arara grande mesmo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <!-- br -->
+                    <div class="clearfix visible-xs"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_3.jpg" class="img-responsive">
+                        <h2>A title Muito grande que quebra tudo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <!-- br -->
+                    <div class="clearfix visible-sm"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_4.jpg" class="img-responsive">
+                        <h2>A title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <!-- br -->
+                    <div class="clearfix visible-lg visible-md visible-xs"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_5.jpg" class="img-responsive">
+                        <h2>A title Pavao bem grande que quebra</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_6.jpg" class="img-responsive">
+                        <h2>A title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <!-- br -->
+                    <div class="clearfix visible-sm visible-xs"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_7.jpg" class="img-responsive">
+                        <h2>A title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_8.jpg" class="img-responsive">
+                        <h2>A title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <!-- br -->
+                    <div class="clearfix visible-lg visible-md visible-xs"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_1.jpg" class="img-responsive">
+                        <h2>Tútulo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <!-- br -->
+                    <div class="clearfix visible-sm"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_2.jpg" class="img-responsive">
+                        <h2>A title Arara grande mesmo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <!-- br -->
+                    <div class="clearfix visible-xs"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_3.jpg" class="img-responsive">
+                        <h2>A title Muito grande que quebra tudo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_4.jpg" class="img-responsive">
+                        <h2>A title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <!-- br -->
+                    <div class="clearfix visible-lg visible-md visible-sm visible-xs"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="img/220_5.jpg" class="img-responsive">
+                        <h2>A title Pavao bem grande que quebra</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section section-danger">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Footer header</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="text-info text-right">
+                            <br>
+                            <br>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 hidden-xs text-right">
+                                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		
+		
+		 <script>
+
+            /*var tokenVest = 420;
+
+            var flagTabVest = false;*/
+
+			var token_glue_menu = Math.round(parseInt($("#shows").offset().top)) + 6;
+			//alert (token_glue_menu);
+			
+			
+            $(window).scroll(function () {
+
+                var $window = $(window);
+
+                var top = $window.scrollTop(); //position of the scrollbar
+				
+				
+				
+                //$("#debug").html("DEBUGs: " + top);
+
+                if (top > token_glue_menu) {
+                    if ($('#glue-menu').is(":hidden"))
+                        //$('#glue-menu').fadeIn("fast");
+						$('#glue-menu').show();
+                } else {
+                    if ($('#glue-menu').is(":visible")) {
+                        //$('#glue-menu').fadeOut("fast");
+						$('#glue-menu').hide();
+					}
+                }
+			});
+		</script>
+		
+		
+		
+		
+    </body>
+
+</html>
